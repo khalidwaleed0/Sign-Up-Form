@@ -136,6 +136,15 @@ span.required-field {
 	opacity: 1;
 }
 
+input[type="email"]:invalid:has(input[type="email"]:focus) ~ .invalid-email{
+	visibility: visible;
+}
+
+input[type="email"]:valid ~ .invalid-email,
+input[type="email"]:placeholder-shown ~ .invalid-email {
+	visibility: hidden;
+}
+
 form:has(input[name="password"]:focus) .password-conditions {
 	visibility: visible;
 }
