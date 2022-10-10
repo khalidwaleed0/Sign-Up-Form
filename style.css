@@ -28,7 +28,7 @@ body {
 	height: 100%;
 }
 
-img {
+.background-image {
 	height: 100%;
 	width: 35vw;
 	object-fit: cover;
@@ -62,4 +62,19 @@ form h6 {
 
 .inputs-container input {
 	width: 30vw;
+}
+
+footer {
+	display: flex;
+	margin-top: auto;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4px;
+	gap: 4px;
+	background-color: gray;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
 }
