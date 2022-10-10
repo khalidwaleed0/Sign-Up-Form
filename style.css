@@ -184,3 +184,13 @@ footer img {
 	height: 28px;
 	margin-top: 3px;
 }
+
+@media (max-width: 950px) {
+	.main {
+		flex-direction: column;
+	}
+	.img-container {
+		height: 50vh;
+		width: 100%;
+	}
+}
