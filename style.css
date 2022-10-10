@@ -57,11 +57,38 @@ form h6 {
 .inputs-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 6px;
+	gap: 42px;
+	margin-top: 32px;
+}
+.inputs-container div {
+	width: 45%;
 }
 
 .inputs-container input {
-	width: 30vw;
+	border-style: none;
+	border-bottom: 2px solid #e5e7eb;
+	outline: none;
+	padding-left: 2px;
+	padding-bottom: 1px;
+	width: 100%;
+	font-size: 16px;
+}
+
+.inputs-container input:focus {
+	border-bottom-color: #317dad;
+}
+
+.inputs-container span {
+	position: relative;
+	bottom: 24px;
+	pointer-events: none;
+	transition: 0.25s;
+}
+
+.inputs-container input:focus ~ span,
+.inputs-container input:valid ~ span{
+	bottom: 42px;
+	font-size: 12px;
 }
 
 button {
@@ -94,7 +121,6 @@ footer {
 	margin-top: auto;
 	justify-content: center;
 	align-items: center;
-	/* padding-top: 4px; */
 	gap: 4px;
 	background-color: gray;
 }
