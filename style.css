@@ -7,31 +7,69 @@
 	src: url(fonts/Ubuntu-Bold.ttf);
 	font-weight: bold;
 }
-
+@font-face {
+	font-family: norse-bold;
+	src: url(fonts/Norse-Bold.otf);
+}
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-	height: 100vh;
 	margin: 0;
 	padding: 0;
 	background-color: #f9fafb;
 	font-family: ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
-	overflow: hidden;
 }
 
 .main {
 	display: flex;
 	height: 100%;
+	align-items: stretch;
+	min-height: 100vh;
 }
 
-.background-image {
-	height: 100%;
+.img-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 auto;
 	width: 35vw;
-	object-fit: cover;
+	background: url(images/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	padding: 16px;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: white;
+	background-color: rgba(0, 0, 0, .5);
+	font-family: norse-bold;
+	font-size: 72px;
+}
+
+#logo img {
+	height: 160px;
+}
+
+.credit {
+	color: grey;
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+
+.credit a {
+	color: lightgrey;
 }
 
 .form-container {
