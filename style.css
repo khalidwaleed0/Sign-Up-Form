@@ -64,6 +64,25 @@ form h6 {
 	width: 30vw;
 }
 
+button {
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #317dad;
+	width: 180px;
+	padding: 12px 18px;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: 600;
+	transition: transform 100ms ease-in-out;
+}
+
+button:hover {
+	color: white;
+	background-color: #317dad;
+	transform: scale(1.03);
+	cursor: pointer;
+}
+
 footer {
 	display: flex;
 	margin-top: auto;
