@@ -124,7 +124,7 @@ form h6 {
 }
 
 .inputs-container input:focus ~ span,
-.inputs-container input:valid ~ span {
+.inputs-container input:not(:placeholder-shown) ~ span {
 	bottom: 42px;
 	font-size: 12px;
 	opacity: 1;
@@ -134,6 +134,13 @@ span.required-field {
 	color: red;
 	font-weight: bold;
 	opacity: 1;
+}
+
+form:has(input[name="password"]:focus) .password-conditions {
+	visibility: visible;
+}
+.password-conditions {
+	visibility: hidden;
 }
 
 .btn-container {
@@ -193,4 +200,14 @@ footer img {
 		height: 50vh;
 		width: 100%;
 	}
+}
+
+.password-conditions span[checked=false]::after {
+	content: "🗴 ";
+	color: red;
+}
+
+.password-conditions span[checked=true]::after {
+	content: "✓ ";
+	color: green;
 }
