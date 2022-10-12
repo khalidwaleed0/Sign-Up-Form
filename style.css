@@ -95,11 +95,12 @@ form h6 {
 .inputs-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 42px;
+	gap: 32px 50px;
 	margin-top: 32px;
 }
 .inputs-container div {
-	width: 45%;
+	flex: 1;
+	min-width: 45%;
 }
 
 .inputs-container input {
@@ -208,6 +209,9 @@ footer img {
 	.img-container {
 		height: 50vh;
 		width: 100%;
+	}
+	.form-container > p {
+		font-size: 18px;
 	}
 }
 
